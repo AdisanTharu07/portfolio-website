@@ -1,0 +1,89 @@
+.main-container {
+    max-width: 1589.99px;
+    margin-inline: auto;
+}
+
+.grid {
+    display: grid;
+}
+
+.grid-two {
+    grid-template-columns: repeat(2, 1fr);
+    place-items: center;
+}
+
+.padd-45 {
+    padding: 4.5rem;
+}
+
+.btn {
+    font-size: var(--font-para);
+    color: var(--bg-color);
+    background-color: var(--first-color-alt);
+    padding: .5rem 1.2rem;
+    border-radius: var(--radius-05);
+    line-height: 3.6;
+    text-decoration: none;
+    transition: var(--transition);
+}
+
+.btn:hover,
+.btn:focus {
+    box-shadow: var(--shadow-02);
+}
+
+
+.title h2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: var(--font-logo);
+    gap: .6rem;
+    font-family: "Merienda", cursive;
+    text-shadow: var(--font-shadow);
+    margin: 6.99vh 0 3.99vh;
+    position: relative;
+}
+
+.title h2::after {
+    content: '';
+    height: .5rem;
+    width: 8.99rem;
+    border-radius: 5.99rem 1.99rem;
+    background: linear-gradient(45deg, var(--first-color), var(--first-color-alt));
+    bottom: -.99rem;
+    position: absolute;
+}
+
+.title h2::before {
+    content: '';
+    height: 1.99rem;
+    width: 1.99rem;
+    border-radius: var(--radius-05);
+    transform: rotate(45deg);
+    background: linear-gradient(45deg, var(--bg-color), var(--first-color-alt));
+    bottom: -1.85rem;
+    position: absolute;
+}
+
+.title h2 > span {
+    color: var(--first-color);
+    font-family: "Merienda", cursive;
+}
+
+.sub_title h3 {
+    font-size: var(--font-icon);
+    color: var(--second-color);
+    /* text-align: center; */
+}
+
+.sub_title h3 > span {
+    color: var(--first-color-alt);
+}
+
+.about-container,
+.skills-container,
+.education-container,
+.contact-container {
+    padding: 6.99vh 0 3.99vh;
+}

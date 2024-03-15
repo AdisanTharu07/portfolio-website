@@ -470,7 +470,8 @@ html {
     border-radius: 3.5rem 1rem;
     font-size: var(--font-para);
     position: relative;
-    cursor: pointer;
+    pointer-events: default;
+
 }
 
 .left-details {
@@ -507,7 +508,7 @@ html {
 
 .education-disc h2 {
     font-size: var(--font-icon);
-    color: var(--second-color);
+    color: var(--second-color-alt);
     /* text-decoration: underline; */
     line-height: 1.2;
 }
@@ -521,6 +522,22 @@ html {
     font-size: var(--font-para);
     color: var(--second-color-alt);
     line-height: 1.5;
+}
+
+.education-disc p>span {
+    color: var(--second-color);
+    text-decoration: underline;
+}
+
+.education-disc p>a {
+    /* color: var(--seconnd-color); */
+    /* cursor: pointer; */
+}
+
+.education-disc p>a:active,
+.education-disc p>a:link {
+    color: var(--first-color);
+    /* color: red; */
 }
 
 .left-arrow {
@@ -701,7 +718,32 @@ textarea {
     position: absolute;
 }
 
-.footer p {
+.footer .grid-row p {
     font-size: var(--font-para);
     color: var(--second-color-alt);
+}
+
+.social_links {
+    padding: 2rem 0 1rem;
+}
+
+.grid-row .social_links a {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    font-size: var(--font-mini-title);
+    margin: .6rem;
+    color: var(--second-color-alt);
+    height: 4rem;
+    width: 4rem;
+    background-color: var(--bg-color-alt);
+    border-radius: 50%;
+    transition: var(--transition);
+    text-decoration: none;
+}
+
+.social_links a:hover {
+    color: var(--first-color);
+    filter: drop-shadow(2px 2px 3px rgba(0, 0, 0, 0.1));
+    background-color: var(--bg-color);
 }
